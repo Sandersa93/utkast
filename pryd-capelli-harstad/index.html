@@ -1,49 +1,46 @@
 <!doctype html>
-<html lang="nb">
-<head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<html lang="nb"><head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Pryd av Capelli — Harstad</title>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet"/>
 <style>
 :root { --bg:#f6eee4; --fg:#1c130e; --muted:#6e5a4a; --surface:#fbf6ee; --line:#e2d3c2; --ink:#1c130e; --inkfg:#fbf6ee; --accent:#9a4b2e; }
 * { box-sizing:border-box; }
-body { margin:0; background:var(--bg); color:var(--fg); font-family:Outfit,system-ui,sans-serif; line-height:1.55; }
+body { margin:0; background:var(--bg); color:var(--fg); font-family:Outfit,system-ui,sans-serif; line-height:1.6; }
 h1,h2,h3 { font-family:Fraunces,Georgia,serif; font-weight:500; line-height:1.15; text-wrap:balance; }
-p { text-wrap:pretty; }
+p { text-wrap:pretty; margin:0 0 1em; }
 .bar { background:var(--ink); color:var(--inkfg); text-align:center; font-size:12px; padding:8px 16px; }
 header { position:sticky; top:0; z-index:10; background:color-mix(in srgb, var(--bg) 88%, transparent); backdrop-filter:blur(12px); border-bottom:1px solid var(--line); }
 .row { max-width:1080px; margin:0 auto; padding:12px 20px; display:flex; justify-content:space-between; align-items:center; gap:12px; }
 .logo { font-family:Fraunces,Georgia,serif; font-size:22px; color:var(--fg); text-decoration:none; }
 .btn { display:inline-flex; min-height:44px; align-items:center; padding:0 20px; border-radius:999px; text-decoration:none; font-size:14px; font-weight:500; background:var(--accent); color:#fff; }
-.btn-light { background:var(--surface); color:var(--fg); }
+.btn-light { background:#fff; color:var(--fg); }
 .hero { position:relative; }
 .hero img { width:100%; height:74vh; min-height:380px; object-fit:cover; display:block; }
-.shade { position:absolute; inset:0; background:linear-gradient(to top, color-mix(in srgb, var(--fg) 72%, transparent), transparent 55%); }
+.shade { position:absolute; inset:0; background:linear-gradient(to top, color-mix(in srgb, var(--fg) 74%, transparent), transparent 58%); }
 .copy { position:absolute; left:0; right:0; bottom:0; max-width:1080px; margin:0 auto; padding:80px 20px 40px; color:#fff; }
 .kicker { font-size:12px; letter-spacing:.18em; text-transform:uppercase; color:var(--accent); font-weight:600; }
-.copy .kicker { color:#fff; opacity:.85; }
-h1 { font-size:clamp(40px,7vw,68px); margin:8px 0 14px; }
-.lede { font-size:18px; max-width:34rem; opacity:.95; }
+.copy .kicker { color:#fff; opacity:.9; }
+h1 { font-size:clamp(40px,7vw,64px); margin:8px 0 14px; }
+.lede { font-size:1.15rem; max-width:36rem; opacity:.96; }
 .actions { display:flex; flex-wrap:wrap; gap:10px; margin-top:22px; }
-.wrap { max-width:1080px; margin:0 auto; padding:64px 20px; }
-.intro { max-width:40rem; }
-.intro h2 { font-size:36px; margin:8px 0 16px; }
-.cards { display:grid; gap:14px; margin-top:28px; }
-@media(min-width:700px){ .cards { grid-template-columns:1fr 1fr; } .split { grid-template-columns:1.1fr .9fr; display:grid; gap:48px; align-items:start; } }
-.card { background:var(--surface); border:1px solid var(--line); border-radius:20px; padding:22px; }
-.card h3 { margin:0 0 8px; font-size:22px; }
+.wrap { max-width:1080px; margin:0 auto; padding:72px 20px; }
+.intro { max-width:42rem; }
+.intro h2 { font-size:2rem; margin:8px 0 16px; }
+.cards { display:grid; gap:14px; margin-top:32px; }
+@media(min-width:700px){ .cards { grid-template-columns:1fr 1fr; } .split { display:grid; grid-template-columns:1.1fr .9fr; gap:48px; } }
+.card { background:var(--surface); border:1px solid var(--line); border-radius:20px; padding:24px; }
+.card h3 { margin:0 0 8px; font-size:1.35rem; }
 .muted { color:var(--muted); }
 .band { background:var(--surface); border-top:1px solid var(--line); }
 .photos { display:grid; gap:12px; padding:0 20px 64px; max-width:1080px; margin:0 auto; }
 @media(min-width:700px){ .photos { grid-template-columns:1.2fr .8fr; } }
-.photos img { width:100%; height:280px; object-fit:cover; border-radius:20px; }
+.photos img { width:100%; height:300px; object-fit:cover; border-radius:20px; }
 .hours div { display:flex; justify-content:space-between; padding:12px 0; border-bottom:1px solid var(--line); font-size:15px; }
 footer { padding:48px 20px; border-top:1px solid var(--line); }
 a { color:inherit; }
 </style>
-</head>
-<body>
+</head><body>
 <p class="bar">Utkast — tekst og bilder justeres med dere. Ingenting er lagt ut i deres navn.</p>
 <header><div class="row"><a class="logo" href="#top">Pryd av Capelli</a><a class="btn" href="tel:+4777068250">Bestill time</a></div></header>
 <section class="hero" id="top">
@@ -52,21 +49,20 @@ a { color:inherit; }
 <div class="copy">
 <p class="kicker">Rikard Kaarbøs gate 9 · Harstad</p>
 <h1>Pryd av Capelli</h1>
-<p class="lede">Laila Turid Høybakk sin salong i Harstad. Klipp og farge som skal pynte — uten at det blir stivt.</p>
+<p class="lede">Klipp og farge som skal pynte — uten at det blir stivt. Harstad, midt i gata.</p>
 <div class="actions">
 <a class="btn btn-light" href="tel:+4777068250">77 06 82 50</a>
 <a class="btn" href="#hit">Finn oss</a>
-</div>
-</div>
-</section>
+</div></div></section>
 <section class="wrap">
 <div class="intro">
 <p class="kicker">Velkommen</p>
 <h2>Hår som kler deg, ikke en trend</h2>
-<p>Vi klipper og farger dame og herre. Du skal ut og kjenne at det er ditt hår, bare bedre. Vi tar oss tid i stolen, og vi sier ifra hvis noe ikke kommer til å holde.</p>
-<p>Salongen ligger i Rikard Kaarbøs gate. Ring 77 06 82 50.</p>
+<p>Pryd av Capelli ligger i Rikard Kaarbøs gate. Vi klipper og farger dame og herre. Du skal ut og kjenne at det er ditt hår, bare bedre.</p>
+<p>Vi tar oss tid i stolen. Vi sier ifra hvis noe ikke kommer til å holde til neste time. Det er bedre enn at du går ut og angrer i speilet på kjøkkenet.</p>
+<p>Ring 77 06 82 50. Si hva du skal, så setter vi av nok tid.</p>
 </div>
-<div class="cards"><div class="card"><h3>Klipp</h3><p class="muted">Form etter ansikt og hverdag, ikke etter et bilde du angrer på.</p></div><div class="card"><h3>Farge</h3><p class="muted">Varmt, kaldt, striper eller jevnt — vi matcher det du har.</p></div><div class="card"><h3>Vedlikehold</h3><p class="muted">Den klippen som holder til neste time.</p></div><div class="card"><h3>Time</h3><p class="muted">Telefon. Vi tar imot.</p></div></div>
+<div class="cards"><div class="card"><h3>Klipp</h3><p class="muted">Form etter ansikt og hverdag, ikke etter et bilde du angrer på.</p></div><div class="card"><h3>Farge</h3><p class="muted">Varmt, kaldt, striper eller jevnt — vi matcher det du har.</p></div><div class="card"><h3>Vedlikehold</h3><p class="muted">Den klippen som holder til neste time, ikke til neste dag.</p></div><div class="card"><h3>Time</h3><p class="muted">Telefon. Vi tar imot.</p></div></div>
 </section>
 
 <section class="band" id="hit">
@@ -84,11 +80,8 @@ a { color:inherit; }
 <p>Rikard Kaarbøs gate 9<br/>9405 Harstad</p>
 <p class="muted">Org.nr 814 881 962</p>
 <p><a href="https://maps.google.com/?q=Rikard+Kaarbøs+gate+9,+9405+Harstad">Åpne i Kart</a></p>
-</div>
-</div>
-</section>
+</div></div></section>
 <footer>
-<p style="font-family:Fraunces,Georgia,serif;font-size:24px;margin:0">Pryd av Capelli</p>
+<p style="font-family:Fraunces,Georgia,serif;font-size:24px;margin:0 0 8px">Pryd av Capelli</p>
 <p class="muted">Utkast. Bildene er stemning, ikke fra salongen. Fastpris 8 990 kr, 249 kr/mnd for drift.</p>
-</footer>
-</body></html>
+</footer></body></html>
