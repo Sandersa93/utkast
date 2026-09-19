@@ -1,66 +1,94 @@
 <!doctype html>
 <html lang="nb">
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta http-equiv="Cache-Control" content="no-cache"/>
-  <title>Celius — utkast</title>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet"/>
-  <style>
-    :root { --bg:#eef2f4; --fg:#142028; --muted:#5b6a73; --surface:#f7f9fa; --line:#cfd8dd; --ink:#1a2a33; --inkfg:#f7f9fa; }
-    * { box-sizing:border-box; }
-    body { margin:0; background:var(--bg); color:var(--fg); font-family:Outfit,system-ui,sans-serif; }
-    h1,h2 { font-family:Fraunces,Georgia,serif; font-weight:500; }
-    .bar { background:var(--ink); color:var(--inkfg); text-align:center; font-size:12px; padding:8px 16px; }
-    header { position:sticky; top:0; background:color-mix(in srgb, var(--bg) 90%, transparent); backdrop-filter:blur(10px); border-bottom:1px solid var(--line); }
-    .row { max-width:1040px; margin:0 auto; padding:12px 16px; display:flex; justify-content:space-between; align-items:center; }
-    .logo { font-family:Fraunces,Georgia,serif; font-size:20px; color:var(--fg); text-decoration:none; }
-    .btn { display:inline-flex; min-height:44px; align-items:center; padding:0 18px; border-radius:999px; text-decoration:none; font-size:14px; font-weight:500; background:var(--ink); color:var(--inkfg); }
-    .btn-light { background:var(--surface); color:var(--fg); }
-    .hero { position:relative; }
-    .hero img { width:100%; height:70vh; min-height:360px; object-fit:cover; display:block; }
-    .shade { position:absolute; inset:0; background:linear-gradient(to top, color-mix(in srgb, var(--ink) 78%, transparent), transparent); }
-    .copy { position:absolute; left:0; right:0; bottom:0; max-width:1040px; margin:0 auto; padding:80px 16px 36px; color:var(--inkfg); }
-    .kicker { font-size:11px; letter-spacing:.16em; text-transform:uppercase; opacity:.8; }
-    h1 { font-size:clamp(36px,6vw,56px); margin:8px 0 12px; line-height:1.02; }
-    .wrap { max-width:1040px; margin:0 auto; padding:56px 16px; display:grid; gap:32px; }
-    @media(min-width:700px){ .wrap { grid-template-columns:1fr 1fr; } }
-    .band { background:var(--surface); border-top:1px solid var(--line); }
-    footer { padding:40px 16px; border-top:1px solid var(--line); }
-    .muted { color:var(--muted); }
-    a { color:inherit; }
-  </style>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Celius — Tromsø</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet"/>
+<style>
+:root { --bg:#f7ebe3; --fg:#2b1610; --muted:#7a5346; --surface:#fff8f2; --line:#edd4c6; --ink:#2b1610; --inkfg:#fff8f2; --accent:#d3543a; }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--bg); color:var(--fg); font-family:Outfit,system-ui,sans-serif; line-height:1.55; }
+h1,h2,h3 { font-family:Fraunces,Georgia,serif; font-weight:500; line-height:1.15; text-wrap:balance; }
+p { text-wrap:pretty; }
+.bar { background:var(--ink); color:var(--inkfg); text-align:center; font-size:12px; padding:8px 16px; }
+header { position:sticky; top:0; z-index:10; background:color-mix(in srgb, var(--bg) 88%, transparent); backdrop-filter:blur(12px); border-bottom:1px solid var(--line); }
+.row { max-width:1080px; margin:0 auto; padding:12px 20px; display:flex; justify-content:space-between; align-items:center; gap:12px; }
+.logo { font-family:Fraunces,Georgia,serif; font-size:22px; color:var(--fg); text-decoration:none; }
+.btn { display:inline-flex; min-height:44px; align-items:center; padding:0 20px; border-radius:999px; text-decoration:none; font-size:14px; font-weight:500; background:var(--accent); color:#fff; }
+.btn-light { background:var(--surface); color:var(--fg); }
+.hero { position:relative; }
+.hero img { width:100%; height:74vh; min-height:380px; object-fit:cover; display:block; }
+.shade { position:absolute; inset:0; background:linear-gradient(to top, color-mix(in srgb, var(--fg) 72%, transparent), transparent 55%); }
+.copy { position:absolute; left:0; right:0; bottom:0; max-width:1080px; margin:0 auto; padding:80px 20px 40px; color:#fff; }
+.kicker { font-size:12px; letter-spacing:.18em; text-transform:uppercase; color:var(--accent); font-weight:600; }
+.copy .kicker { color:#fff; opacity:.85; }
+h1 { font-size:clamp(40px,7vw,68px); margin:8px 0 14px; }
+.lede { font-size:18px; max-width:34rem; opacity:.95; }
+.actions { display:flex; flex-wrap:wrap; gap:10px; margin-top:22px; }
+.wrap { max-width:1080px; margin:0 auto; padding:64px 20px; }
+.intro { max-width:40rem; }
+.intro h2 { font-size:36px; margin:8px 0 16px; }
+.cards { display:grid; gap:14px; margin-top:28px; }
+@media(min-width:700px){ .cards { grid-template-columns:1fr 1fr; } .split { grid-template-columns:1.1fr .9fr; display:grid; gap:48px; align-items:start; } }
+.card { background:var(--surface); border:1px solid var(--line); border-radius:20px; padding:22px; }
+.card h3 { margin:0 0 8px; font-size:22px; }
+.muted { color:var(--muted); }
+.band { background:var(--surface); border-top:1px solid var(--line); }
+.photos { display:grid; gap:12px; padding:0 20px 64px; max-width:1080px; margin:0 auto; }
+@media(min-width:700px){ .photos { grid-template-columns:1.2fr .8fr; } }
+.photos img { width:100%; height:280px; object-fit:cover; border-radius:20px; }
+.hours div { display:flex; justify-content:space-between; padding:12px 0; border-bottom:1px solid var(--line); font-size:15px; }
+footer { padding:48px 20px; border-top:1px solid var(--line); }
+a { color:inherit; }
+</style>
 </head>
 <body>
-  <p class="bar">Utkast til Celius — ikke publisert. Tider og bilder justeres med dere.</p>
-  <header><div class="row"><a class="logo" href="#top">Celius</a><a class="btn" href="tel:+4799103394">Bestill time</a></div></header>
-  <section class="hero" id="top">
-    <img src="hero.jpg" alt="Salongen"/>
-    <div class="shade"></div>
-    <div class="copy">
-      <p class="kicker">Tromsø · Strandgata 9</p>
-      <h1>Celius</h1>
-      <p>Klipp og farge i Strandgata. Ring og få time.</p>
-      <p style="margin-top:20px"><a class="btn btn-light" href="tel:+4799103394">991 03 394</a></p>
-    </div>
-  </section>
-  <section class="wrap">
-    <div>
-      <p class="kicker">Salongen</p>
-      <h2>I Strandgata i Tromsø</h2>
-      <p class="muted">Ni i salongen. Gry Celius. Celius AS.</p>
-    </div>
-    <div>
-      <p class="kicker">Adresse</p>
-      <h2>Finn oss</h2>
-      <p>Strandgata 9<br/>9008 Tromsø</p>
-      <p class="muted">Org.nr 914 440 343</p>
-      <p><a href="https://maps.google.com/?q=Strandgata+9,+9008+Tromsø">Åpne i Kart</a></p>
-    </div>
-  </section>
-  <footer>
-    <p style="font-family:Fraunces,Georgia,serif;font-size:22px;margin:0">Celius</p>
-    <p class="muted">Utkast. Bildene er stemning, ikke fra salongen. Fastpris 8 990 kr, 249 kr/mnd for drift.</p>
-  </footer>
-</body>
-</html>
+<p class="bar">Utkast — tekst og bilder justeres med dere. Ingenting er lagt ut i deres navn.</p>
+<header><div class="row"><a class="logo" href="#top">Celius</a><a class="btn" href="tel:+4799103394">Bestill time</a></div></header>
+<section class="hero" id="top">
+<img src="hero.jpg" alt=""/>
+<div class="shade"></div>
+<div class="copy">
+<p class="kicker">Strandgata 9 · Tromsø</p>
+<h1>Farge, klipp og godt humør i Strandgata</h1>
+<p class="lede">Kom inn som du er. Gå ut med hår du faktisk liker. Celius ligger midt i Tromsø sentrum.</p>
+<div class="actions">
+<a class="btn btn-light" href="tel:+4799103394">991 03 394</a>
+<a class="btn" href="#hit">Finn oss</a>
+</div>
+</div>
+</section>
+<section class="wrap">
+<div class="intro">
+<p class="kicker">Velkommen</p>
+<h2>En salong som synes — også når det er mørkt ute</h2>
+<p>Celius er Gry Celius sin salong i Strandgata. Hit kommer folk for klipp, farge og en time der det er lov å puste. Vi tar dame og herre, kort og langt, rolig vedlikehold og skikkelig forandring.</p>
+<p>Du ringer, får time, setter deg ned. Vi hører hva du vil — og sier ifra hvis noe passer bedre. Etterpå skal du kjenne deg mer som deg, ikke som en katalog.</p>
+</div>
+<div class="cards"><div class="card"><h3>Klipp</h3><p class="muted">Dame, herre og barn. Pony, lag, vedlikehold — det du faktisk bruker i hverdagen.</p></div><div class="card"><h3>Farge</h3><p class="muted">Heldekkende, striper, gloss og oppfrisking. Vi tar oss tid, så det blir jevnt.</p></div><div class="card"><h3>Styling</h3><p class="muted">Til hverdag, fest og alt imellom. Du skal klare å gjenskape det hjemme.</p></div><div class="card"><h3>Drop-in</h3><p class="muted">Når listen tillater det. Ring først, så slipper du å stå og vente.</p></div></div>
+</section>
+<div class="photos"><img src="hylle.jpg" alt=""/><img src="farge.jpg" alt=""/></div>
+<section class="band" id="hit">
+<div class="wrap split">
+<div>
+<p class="kicker">Åpningstider</p>
+<h2>Når vi er her</h2>
+<p class="muted">Et utgangspunkt. Dere retter tider og helligdager.</p>
+<div class="hours"><div><span>Mandag–fredag</span><span class="muted">09–17</span></div><div><span>Lørdag</span><span class="muted">Etter avtale</span></div><div><span>Søndag</span><span class="muted">Stengt</span></div></div>
+<p style="margin-top:28px"><a class="btn" href="tel:+4799103394">Ring 991 03 394</a></p>
+</div>
+<div>
+<p class="kicker">Adresse</p>
+<h2>Midt i Strandgata</h2>
+<p>Strandgata 9<br/>9008 Tromsø</p>
+<p class="muted">Org.nr 914 440 343</p>
+<p><a href="https://maps.google.com/?q=Strandgata+9,+9008+Tromsø">Åpne i Kart</a></p>
+</div>
+</div>
+</section>
+<footer>
+<p style="font-family:Fraunces,Georgia,serif;font-size:24px;margin:0">Celius</p>
+<p class="muted">Utkast. Bildene er stemning, ikke fra salongen. Fastpris 8 990 kr, 249 kr/mnd for drift.</p>
+</footer>
+</body></html>
