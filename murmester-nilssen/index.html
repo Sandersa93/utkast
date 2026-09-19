@@ -27,12 +27,13 @@ h1 { font-size:clamp(36px,5.6vw,64px); margin:0 0 18px; max-width:14ch; }
 .split { display:grid; gap:48px; }
 @media(min-width:840px){
   .split { grid-template-columns:1.15fr 0.85fr; align-items:start; }
-  .jobs { grid-template-columns:1fr 1fr 1fr; }
+  .jobs { grid-template-columns:1fr 1fr; }
 }
 .jobs { display:grid; gap:16px; margin-top:32px; }
 .job { background:color-mix(in srgb, var(--fg) 4%, transparent); border:1px solid var(--line); border-radius:8px; padding:22px 22px 20px; }
 .job h2 { font-size:1.15rem; margin:0 0 8px; padding-block:0; }
 .muted { color:var(--muted); }
+.shot { width:100%; border-radius:8px; display:block; aspect-ratio:16/9; object-fit:cover; }
 .meta { font-size:15px; }
 .meta div { display:flex; justify-content:space-between; gap:16px; padding:14px 0; border-bottom:1px solid var(--line); }
 .meta div:first-child { border-top:1px solid var(--line); }
@@ -46,34 +47,41 @@ a { color:inherit; }
   <a class="btn" href="tel:+4774285600">74 28 56 00</a>
 </header>
 <section class="hero" id="top">
-  <img src="hero.jpg" alt=""/>
+  <img src="hero-v2.jpg" alt="Teglstein og mørtel"/>
   <div class="veil"></div>
   <div class="inner">
-    <p class="kicker">Skage i Namdalen</p>
-    <h1>Murmester Erling Nilssen</h1>
-    <p class="lede">Murer på Skage. Bjørn-Eskil Modell, 74 28 56 00.</p>
+    <p class="kicker">Murmester · Skage i Namdalen</p>
+    <h1>Mur. Tegl. Puss.</h1>
+    <p class="lede">Murmester Erling Nilssen tar murerarbeid fra Skage. Bjørn-Eskil Modell, 74 28 56 00.</p>
     <p class="phone"><a href="tel:+4774285600">74 28 56 00</a></p>
   </div>
 </section>
 <section class="wrap">
   <p class="kicker">Oppdrag</p>
-  <h2 style="font-size:clamp(26px,3.2vw,40px);margin:0 0 16px">Mur på Skage</h2>
-  <p>Murmester Erling Nilssen tar murerarbeid fra Skage i Namdalen.</p>
-  <p>Ring 74 28 56 00.</p>
-  <div class="jobs"><div class="job"><h2>Mur</h2><p class="muted">Innvendig og utvendig.</p></div><div class="job"><h2>Flis</h2><p class="muted">Bad og våtrom.</p></div><div class="job"><h2>Skage</h2><p class="muted">Namdalen.</p></div></div>
+  <h2 style="font-size:clamp(26px,3.2vw,40px);margin:0 0 16px">Murer på Skage</h2>
+  <p>Vi murer vegg, piper og peis. Tegl, lettklinker og puss. Innvendig og utvendig, på hus og hytte i Namdalen.</p>
+  <p>Flis på bad og våtrom tar vi også. Ring 74 28 56 00.</p>
+  <div class="jobs">
+    <div class="job"><h2>Tegl og blokk</h2><p class="muted">Yttervegg, innervegg, sope og utbedring.</p></div>
+    <div class="job"><h2>Puss og fuge</h2><p class="muted">Ny puss, omfuging, trekk i vegg.</p></div>
+    <div class="job"><h2>Pipe og peis</h2><p class="muted">Murpipe, peis og vedovn.</p></div>
+    <div class="job"><h2>Flis</h2><p class="muted">Bad, dusj og gulv.</p></div>
+  </div>
 </section>
 <section class="wrap split" style="padding-top:0">
+  <div>
+    <img class="shot" src="mur.jpg" alt="Ferdig teglvegg"/>
+  </div>
   <div>
     <p class="kicker">Kontakt</p>
     <h2>Ring oss</h2>
     <p>Bjørn-Eskil Modell. 7860 Skage i Namdalen.</p>
     <p class="phone"><a href="tel:+4774285600">74 28 56 00</a></p>
-  </div>
-  <div class="meta">
-    <div><span>Adresse</span><span>Skage i Namdalen</span></div>
-    <div><span>Poststed</span><span>7860 Skage i Namdalen</span></div>
-    <div><span>Org.nr</span><span>978 632 807</span></div>
-    <div><span>Kart</span><span><a href="https://maps.google.com/?q=Skage+i+Namdalen">Åpne i Kart</a></span></div>
+    <div class="meta">
+      <div><span>Poststed</span><span>7860 Skage i Namdalen</span></div>
+      <div><span>Org.nr</span><span>978 632 807</span></div>
+      <div><span>Kart</span><span><a href="https://maps.google.com/?q=Skage+i+Namdalen">Åpne i Kart</a></span></div>
+    </div>
   </div>
 </section>
 <footer>
