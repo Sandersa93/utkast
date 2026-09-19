@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="nb"><head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Blåsmo Elektro — elektriker Hitra</title>
+<style>
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Syne:wght@700;800&display=swap");
+:root { --bg:#071214; --fg:#e8f4f4; --muted:#8aa0a3; --line:#1c3336; --accent:#3ee0c4; --ink:#06201c; }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--bg); color:var(--fg); font-family:"IBM Plex Sans",system-ui,sans-serif; line-height:1.55; }
+h1,h2 { font-family:Syne,sans-serif; font-weight:800; letter-spacing:-.03em; line-height:0.95; text-wrap:balance; }
+p { margin:0 0 1em; max-width:40rem; }
+.bar { background:var(--accent); color:var(--ink); text-align:center; font-size:12px; font-weight:600; padding:8px 16px; }
+header { position:sticky; top:0; z-index:5; display:flex; justify-content:space-between; align-items:center; padding:14px 20px; background:color-mix(in srgb, var(--bg) 85%, transparent); backdrop-filter:blur(12px); border-bottom:1px solid var(--line); }
+.logo { font-family:Syne,sans-serif; font-weight:800; color:var(--fg); text-decoration:none; font-size:18px; }
+.btn { display:inline-flex; min-height:44px; align-items:center; padding:0 18px; background:var(--accent); color:var(--ink); text-decoration:none; font-weight:600; font-size:14px; }
+.hero { position:relative; min-height:78vh; display:flex; align-items:flex-end; }
+.hero img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
+.hero .veil { position:absolute; inset:0; background:linear-gradient(to top, var(--bg) 0%, color-mix(in srgb, var(--bg) 55%, transparent) 45%, transparent 75%); }
+.hero .inner { position:relative; padding:40px 20px 48px; max-width:1100px; width:100%; margin:0 auto; }
+.kicker { font-size:12px; letter-spacing:.2em; text-transform:uppercase; color:var(--accent); font-weight:600; margin-bottom:12px; }
+h1 { font-size:clamp(42px,8vw,88px); margin:0 0 16px; max-width:16ch; }
+.lede { font-size:1.15rem; color:color-mix(in srgb, var(--fg) 85%, transparent); }
+.phone { font-family:Syne,sans-serif; font-size:clamp(28px,5vw,52px); font-weight:800; margin:24px 0 8px; }
+.phone a { color:var(--accent); text-decoration:none; }
+.wrap { max-width:1100px; margin:0 auto; padding:64px 20px; }
+.split { display:grid; gap:40px; }
+@media(min-width:800px){ .split { grid-template-columns:1.2fr .8fr; } .jobs { grid-template-columns:1fr 1fr 1fr; } }
+.jobs { display:grid; gap:1px; background:var(--line); margin-top:28px; }
+.job { background:var(--bg); padding:24px; }
+.job h2 { font-size:1.4rem; margin:0 0 8px; }
+.muted { color:var(--muted); }
+.meta { border-top:1px solid var(--line); font-size:15px; }
+.meta div { display:flex; justify-content:space-between; padding:12px 0; border-bottom:1px solid var(--line); }
+footer { padding:40px 20px; border-top:1px solid var(--line); color:var(--muted); font-size:14px; }
+a { color:inherit; }
+</style>
+</head><body>
+<p class="bar">Utkast. Tekst og bilder justeres med dere. Ingenting er lagt ut i deres navn.</p>
+<header>
+  <a class="logo" href="#top">Blåsmo Elektro</a>
+  <a class="btn" href="tel:+4795988390">959 88 390</a>
+</header>
+<section class="hero" id="top">
+  <img src="hero.jpg" alt=""/>
+  <div class="veil"></div>
+  <div class="inner">
+    <p class="kicker">Hamneveien 8 · Sandstad</p>
+    <h1>Blåsmo Elektro</h1>
+    <p class="lede">Elektriker på Hitra. Hamneveien 8, Sandstad. Telefon 959 88 390.</p>
+    <p class="phone"><a href="tel:+4795988390">959 88 390</a></p>
+  </div>
+</section>
+<section class="wrap">
+  <p class="kicker">Oppdrag</p>
+  <h2 style="font-size:clamp(28px,4vw,44px);margin:0 0 8px">På Hitra</h2>
+  <p>Blåsmo Elektro tar elektrisk arbeid på Hitra. Bolig, hytte og det som trengs langs kaia og i huset.</p>
+  <p>Arvid Blåsmo: 959 88 390.</p>
+  <div class="jobs"><div class="job"><h2>Bolig og hytte</h2><p class="muted">Nytt og gammelt. Si hva som skjer, så tar vi det derfra.</p></div><div class="job"><h2>Feil</h2><p class="muted">Kort, jordfeil, kurs som dør. Ring.</p></div><div class="job"><h2>Lys og skap</h2><p class="muted">Bytte, utvide, rydde i det som allerede sitter.</p></div></div>
+</section>
+<section class="wrap split" style="padding-top:0">
+  <div>
+    <p class="kicker">Kontakt</p>
+    <h2>Ring oss</h2>
+    <p>Hamneveien 8, 7246 Sandstad.</p>
+    <p class="phone" style="font-size:2rem"><a href="tel:+4795988390">959 88 390</a></p>
+  </div>
+  <div class="meta">
+    <div><span>Adresse</span><span>Hamneveien 8</span></div>
+    <div><span>Poststed</span><span>7246 Sandstad</span></div>
+    <div><span>Org.nr</span><span>991 230 807</span></div>
+    <div><span>Kart</span><span><a href="https://maps.google.com/?q=Hamneveien+8,+7246+Sandstad">Åpne i Kart</a></span></div>
+  </div>
+</section>
+<footer>
+  <p style="font-family:Syne,sans-serif;color:var(--fg);font-size:20px;margin:0 0 8px">Blåsmo Elektro</p>
+  Utkast. Bildene er stemning, ikke fra bedriften. Fastpris 8 990 kr, 249 kr/mnd for drift.
+</footer>
+</body></html>
