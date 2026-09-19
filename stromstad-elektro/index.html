@@ -3,35 +3,40 @@
 <meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Strømstad Elektro — elektriker Kviteseid</title>
 <style>
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Syne:wght@700;800&display=swap");
-:root { --bg:#0c0d0b; --fg:#f4f1e8; --muted:#9a9588; --line:#2a2b26; --accent:#e7ff3a; --ink:#111; }
+@import url("https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap");
+:root { --bg:#0c0d0b; --fg:#f3f0e8; --muted:#9a9588; --line:#2c2d28; --accent:#d7e14a; --ink:#14150f; }
 * { box-sizing:border-box; }
-body { margin:0; background:var(--bg); color:var(--fg); font-family:"IBM Plex Sans",system-ui,sans-serif; line-height:1.55; }
-h1,h2 { font-family:Syne,sans-serif; font-weight:800; letter-spacing:-.03em; line-height:0.95; text-wrap:balance; }
-p { margin:0 0 1em; max-width:40rem; }
-.bar { background:var(--accent); color:var(--ink); text-align:center; font-size:12px; font-weight:600; padding:8px 16px; }
-header { position:sticky; top:0; z-index:5; display:flex; justify-content:space-between; align-items:center; padding:14px 20px; background:color-mix(in srgb, var(--bg) 85%, transparent); backdrop-filter:blur(12px); border-bottom:1px solid var(--line); }
-.logo { font-family:Syne,sans-serif; font-weight:800; color:var(--fg); text-decoration:none; font-size:18px; }
-.btn { display:inline-flex; min-height:44px; align-items:center; padding:0 18px; background:var(--accent); color:var(--ink); text-decoration:none; font-weight:600; font-size:14px; }
-.hero { position:relative; min-height:78vh; display:flex; align-items:flex-end; }
+html { -webkit-font-smoothing:antialiased; }
+body { margin:0; background:var(--bg); color:var(--fg); font-family:"Schibsted Grotesk",ui-sans-serif,system-ui,sans-serif; font-size:17px; line-height:1.6; }
+h1,h2,h3 { font-family:inherit; font-weight:600; letter-spacing:-0.015em; line-height:1.18; overflow:visible; padding-block:0.08em; text-wrap:balance; }
+p { margin:0 0 1em; max-width:38rem; }
+.bar { background:transparent; color:var(--muted); text-align:center; font-size:12px; font-weight:500; padding:10px 16px; border-bottom:1px solid var(--line); }
+header { position:sticky; top:0; z-index:5; display:flex; justify-content:space-between; align-items:center; gap:16px; padding:14px 24px; background:color-mix(in srgb, var(--bg) 80%, transparent); backdrop-filter:blur(16px); border-bottom:1px solid var(--line); }
+.logo { font-weight:600; color:var(--fg); text-decoration:none; font-size:16px; }
+.btn { display:inline-flex; min-height:44px; align-items:center; padding:0 18px; border-radius:4px; background:var(--accent); color:var(--ink); text-decoration:none; font-weight:600; font-size:14px; }
+.hero { position:relative; min-height:min(86vh,760px); display:flex; align-items:flex-end; }
 .hero img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
-.hero .veil { position:absolute; inset:0; background:linear-gradient(to top, var(--bg) 0%, color-mix(in srgb, var(--bg) 55%, transparent) 45%, transparent 75%); }
-.hero .inner { position:relative; padding:40px 20px 48px; max-width:1100px; width:100%; margin:0 auto; }
-.kicker { font-size:12px; letter-spacing:.2em; text-transform:uppercase; color:var(--accent); font-weight:600; margin-bottom:12px; }
-h1 { font-size:clamp(42px,8vw,88px); margin:0 0 16px; max-width:16ch; }
-.lede { font-size:1.15rem; color:color-mix(in srgb, var(--fg) 85%, transparent); }
-.phone { font-family:Syne,sans-serif; font-size:clamp(28px,5vw,52px); font-weight:800; margin:24px 0 8px; }
-.phone a { color:var(--accent); text-decoration:none; }
-.wrap { max-width:1100px; margin:0 auto; padding:64px 20px; }
-.split { display:grid; gap:40px; }
-@media(min-width:800px){ .split { grid-template-columns:1.2fr .8fr; } .jobs { grid-template-columns:1fr 1fr 1fr; } }
-.jobs { display:grid; gap:1px; background:var(--line); margin-top:28px; }
-.job { background:var(--bg); padding:24px; }
-.job h2 { font-size:1.4rem; margin:0 0 8px; }
+.hero .veil { position:absolute; inset:0; background:linear-gradient(to top, var(--bg) 8%, color-mix(in srgb, var(--bg) 70%, transparent) 42%, transparent 72%); }
+.hero .inner { position:relative; padding:48px 24px 56px; max-width:1080px; width:100%; margin:0 auto; }
+.kicker { font-size:12px; letter-spacing:0.12em; text-transform:uppercase; color:var(--accent); font-weight:600; margin:0 0 14px; }
+h1 { font-size:clamp(36px,5.6vw,64px); margin:0 0 18px; max-width:14ch; }
+.lede { font-size:1.05rem; color:var(--muted); max-width:32rem; }
+.phone { font-size:clamp(22px,3vw,32px); font-weight:600; margin:28px 0 0; letter-spacing:-0.02em; }
+.phone a { color:var(--fg); text-decoration:none; border-bottom:2px solid var(--accent); padding-bottom:2px; }
+.wrap { max-width:1080px; margin:0 auto; padding:72px 24px; }
+.split { display:grid; gap:48px; }
+@media(min-width:840px){
+  .split { grid-template-columns:1.15fr 0.85fr; align-items:start; }
+  .jobs { grid-template-columns:1fr 1fr 1fr; }
+}
+.jobs { display:grid; gap:16px; margin-top:32px; }
+.job { background:color-mix(in srgb, var(--fg) 4%, transparent); border:1px solid var(--line); border-radius:8px; padding:22px 22px 20px; }
+.job h2 { font-size:1.15rem; margin:0 0 8px; padding-block:0; }
 .muted { color:var(--muted); }
-.meta { border-top:1px solid var(--line); font-size:15px; }
-.meta div { display:flex; justify-content:space-between; padding:12px 0; border-bottom:1px solid var(--line); }
-footer { padding:40px 20px; border-top:1px solid var(--line); color:var(--muted); font-size:14px; }
+.meta { font-size:15px; }
+.meta div { display:flex; justify-content:space-between; gap:16px; padding:14px 0; border-bottom:1px solid var(--line); }
+.meta div:first-child { border-top:1px solid var(--line); }
+footer { padding:40px 24px 56px; border-top:1px solid var(--line); color:var(--muted); font-size:14px; }
 a { color:inherit; }
 </style>
 </head><body>
@@ -52,7 +57,7 @@ a { color:inherit; }
 </section>
 <section class="wrap">
   <p class="kicker">Oppdrag</p>
-  <h2 style="font-size:clamp(28px,4vw,44px);margin:0 0 8px">Hus, hytte og næring</h2>
+  <h2 style="font-size:clamp(26px,3.2vw,40px);margin:0 0 16px">Hus, hytte og næring</h2>
   <p>Strømstad Elektro tar elektrisk arbeid for privat og bedrift. Feilsøking, nye anlegg og det som må fikses i sikringsskapet.</p>
   <p>Ring 970 97 485 og si hva som skal gjøres. Så avtaler vi tid.</p>
   <div class="jobs"><div class="job"><h2>Feilsøking</h2><p class="muted">Når noe slår ut, slutter å virke, eller lukter svidd.</p></div><div class="job"><h2>Nytt anlegg</h2><p class="muted">Nyinstallasjon i hus, hytte og lokale.</p></div><div class="job"><h2>Vedlikehold</h2><p class="muted">Sikringsskap, lys og det som skal byttes før det ryker.</p></div></div>
@@ -62,7 +67,7 @@ a { color:inherit; }
     <p class="kicker">Kontakt</p>
     <h2>Ring oss</h2>
     <p>Håkon Strømstad. Høgvollvegen 32, Kviteseid.</p>
-    <p class="phone" style="font-size:2rem"><a href="tel:+4797097485">970 97 485</a></p>
+    <p class="phone"><a href="tel:+4797097485">970 97 485</a></p>
   </div>
   <div class="meta">
     <div><span>Adresse</span><span>Høgvollvegen 32</span></div>
@@ -72,7 +77,7 @@ a { color:inherit; }
   </div>
 </section>
 <footer>
-  <p style="font-family:Syne,sans-serif;color:var(--fg);font-size:20px;margin:0 0 8px">Strømstad Elektro</p>
+  <p style="color:var(--fg);font-size:20px;margin:0 0 8px">Strømstad Elektro</p>
   Utkast. Bildene er stemning, ikke fra bedriften. Fastpris 8 990 kr, 249 kr/mnd for drift.
 </footer>
 </body></html>
