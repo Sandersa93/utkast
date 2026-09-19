@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="nn">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Carisma — Ulsteinvik</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet"/>
+  <style>
+    :root { --bg:#f3ebe0; --fg:#1a1410; --muted:#6b5e52; --surface:#faf6ef; --line:#d9ccba; --ink:#2c1c16; --inkfg:#faf6ef; --accent:#6f4e3a; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--bg); color:var(--fg); font-family:Outfit,system-ui,sans-serif; }
+    h1,h2,h3 { font-family:Fraunces,Georgia,serif; font-weight:500; text-wrap:balance; }
+    .bar { background:var(--ink); color:var(--inkfg); text-align:center; font-size:12px; padding:8px 16px; }
+    header { position:sticky; top:0; background:rgba(243,235,224,.9); backdrop-filter:blur(10px); border-bottom:1px solid rgba(217,204,186,.7); }
+    .row { max-width:1040px; margin:0 auto; padding:12px 16px; display:flex; justify-content:space-between; align-items:center; }
+    .logo { font-family:Fraunces,Georgia,serif; font-size:20px; color:var(--fg); text-decoration:none; }
+    .btn { display:inline-flex; align-items:center; gap:8px; min-height:44px; padding:0 18px; border-radius:999px; text-decoration:none; font-size:14px; font-weight:500; }
+    .btn-dark { background:var(--ink); color:var(--inkfg); }
+    .btn-light { background:var(--surface); color:var(--fg); }
+    .btn-ghost { border:1px solid rgba(250,246,239,.4); color:var(--inkfg); }
+    .hero { position:relative; }
+    .hero img { width:100%; height:72vh; min-height:380px; object-fit:cover; display:block; }
+    .hero .shade { position:absolute; inset:0; background:linear-gradient(to top, rgba(44,28,22,.8), rgba(44,28,22,.2), transparent); }
+    .hero .copy { position:absolute; left:0; right:0; bottom:0; max-width:1040px; margin:0 auto; padding:96px 16px 40px; color:var(--inkfg); }
+    .kicker { font-size:11px; letter-spacing:.18em; text-transform:uppercase; opacity:.8; }
+    .hero h1 { font-size:clamp(40px,7vw,60px); margin:8px 0 12px; line-height:1; }
+    .wrap { max-width:1040px; margin:0 auto; padding:64px 16px; }
+    .grid2 { display:grid; gap:40px; }
+    @media(min-width:700px){ .grid2 { grid-template-columns:1fr 1fr; } .cards { grid-template-columns:1fr 1fr; } .photos { grid-template-columns:1fr 1fr 1fr; } }
+    .cards { display:grid; gap:12px; }
+    .card { background:var(--surface); border:1px solid var(--line); border-radius:20px; padding:20px; }
+    .photos { display:grid; gap:12px; padding:0 16px 64px; max-width:1040px; margin:0 auto; }
+    .photos img { width:100%; height:320px; object-fit:cover; border-radius:20px; }
+    .band { background:var(--surface); border-top:1px solid var(--line); }
+    .hours { border-top:1px solid var(--line); border-bottom:1px solid var(--line); margin-top:24px; }
+    .hours div { display:flex; justify-content:space-between; padding:12px 0; border-bottom:1px solid var(--line); font-size:14px; }
+    .hours div:last-child { border:0; }
+    footer { border-top:1px solid var(--line); padding:40px 16px; }
+    .muted { color:var(--muted); }
+    .actions { display:flex; flex-wrap:wrap; gap:8px; margin-top:24px; }
+  </style>
+</head>
+<body>
+  <p class="bar">Utkast til Carisma — ikkje publisert. Tider og bilete justerast med de.</p>
+  <header><div class="row"><a class="logo" href="#top">Carisma</a><a class="btn btn-dark" href="tel:+4770013800">Bestill time</a></div></header>
+  <section class="hero" id="top">
+    <img src="hero.jpg" alt="Salongen"/>
+    <div class="shade"></div>
+    <div class="copy">
+      <p class="kicker">Ulsteinvik sentrum · Kyrkjegata 22</p>
+      <h1>Velkomen til vår grøne oase</h1>
+      <p>Dame- og herrefrisør. Timebestilling og drop-in. Knakande kjekke damer som elskar jobben.</p>
+      <div class="actions">
+        <a class="btn btn-light" href="tel:+4770013800">70 01 38 00</a>
+        <a class="btn btn-ghost" href="https://maps.google.com/?q=Kyrkjegata+22,+6065+Ulsteinvik">Vegbeskriving</a>
+      </div>
+    </div>
+  </section>
+  <section class="wrap grid2">
+    <div>
+      <p class="kicker" style="color:var(--accent)">Tenester</p>
+      <h2>Klipp, farge og litt ekstra</h2>
+      <p class="muted">Dame eller herre — me tar imot deg. Time via telefon eller Fixit. Drop-in når stolen er ledig.</p>
+    </div>
+    <div class="cards">
+      <div class="card"><h3>Dame</h3><p class="muted">Klipp, farge, striping og styling.</p></div>
+      <div class="card"><h3>Herre</h3><p class="muted">Klipp, skjegg og drop-in når det går.</p></div>
+      <div class="card"><h3>Barn</h3><p class="muted">Rolig klipp. Ingen mas.</p></div>
+      <div class="card"><h3>Velvære</h3><p class="muted">Vippeextension og gele-negler.</p></div>
+    </div>
+  </section>
+  <div class="photos">
+    <img src="klipp.jpg" alt=""/>
+    <img src="stasjon.jpg" alt=""/>
+    <img src="hylla.jpg" alt=""/>
+  </div>
+  <section class="band">
+    <div class="wrap grid2">
+      <div>
+        <p class="kicker" style="color:var(--accent)">Opningstider</p>
+        <h2>Når me er her</h2>
+        <p class="muted">Kan justerast. Helligdagar avvik.</p>
+        <div class="hours">
+          <div><span>Måndag–fredag</span><span class="muted">09–19</span></div>
+          <div><span>Laurdag</span><span class="muted">09–15</span></div>
+          <div><span>Sundag</span><span class="muted">Stengt</span></div>
+        </div>
+        <p style="margin-top:28px"><a class="btn btn-dark" href="tel:+4770013800">Ring og få time</a></p>
+      </div>
+      <div>
+        <p class="kicker" style="color:var(--accent)">Adresse</p>
+        <h2>Midt i sentrum</h2>
+        <p>Kyrkjegata 22<br/>6065 Ulsteinvik</p>
+        <p class="muted">Org.nr 912 182 460</p>
+        <p><a href="https://maps.google.com/?q=Kyrkjegata+22,+6065+Ulsteinvik">Opne i Kart</a></p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="wrap" style="padding:0">
+      <p style="font-family:Fraunces,Georgia,serif;font-size:24px;margin:0">Carisma</p>
+      <p class="muted">Utkast. Bilete er stemning. 8 990 kr å gjere sida ekte, 249 kr/mnd drift. Sei nei, så stoppar det.</p>
+    </div>
+  </footer>
+</body>
+</html>
