@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="nb">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Clou — Oslo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet"/>
+  <style>
+    :root { --bg:#14120f; --fg:#f3eee6; --muted:#b4a99a; --surface:#1d1a16; --line:#3a342c; --ink:#f3eee6; --inkfg:#14120f; }
+    * { box-sizing:border-box; } body { margin:0; background:var(--bg); color:var(--fg); font-family:Outfit,system-ui,sans-serif; }
+    h1,h2 { font-family:Fraunces,Georgia,serif; font-weight:500; }
+    .bar { background:#0c0b09; color:var(--muted); text-align:center; font-size:12px; padding:8px 16px; }
+    header { position:sticky; top:0; background:rgba(20,18,15,.9); backdrop-filter:blur(10px); border-bottom:1px solid var(--line); }
+    .row { max-width:1040px; margin:0 auto; padding:12px 16px; display:flex; justify-content:space-between; align-items:center; }
+    .logo { font-family:Fraunces,Georgia,serif; font-size:20px; color:var(--fg); text-decoration:none; }
+    .btn { display:inline-flex; align-items:center; min-height:44px; padding:0 18px; border-radius:999px; text-decoration:none; font-size:14px; font-weight:500; }
+    .light { background:var(--ink); color:var(--inkfg); } .ghost { border:1px solid var(--line); color:var(--fg); }
+    .hero { position:relative; } .hero img { width:100%; height:72vh; min-height:380px; object-fit:cover; display:block; }
+    .shade { position:absolute; inset:0; background:linear-gradient(to top, rgba(20,18,15,.88), transparent); }
+    .copy { position:absolute; left:0; right:0; bottom:0; max-width:1040px; margin:0 auto; padding:80px 16px 36px; color:var(--fg); }
+    .kicker { font-size:11px; letter-spacing:.18em; text-transform:uppercase; color:var(--muted); }
+    h1 { font-size:clamp(42px,7vw,64px); margin:8px 0 12px; line-height:1; }
+    .wrap { max-width:1040px; margin:0 auto; padding:56px 16px; display:grid; gap:40px; }
+    @media(min-width:700px){ .wrap { grid-template-columns:1fr 1fr; } }
+    .band { background:var(--surface); border-top:1px solid var(--line); }
+    .hours div { display:flex; justify-content:space-between; padding:12px 0; border-bottom:1px solid var(--line); font-size:14px; }
+    footer { padding:40px 16px; border-top:1px solid var(--line); }
+    .muted { color:var(--muted); }
+    img.side { width:100%; height:360px; object-fit:cover; border-radius:18px; }
+    a { color:var(--fg); }
+  </style>
+</head>
+<body>
+  <p class="bar">Utkast til Clou — ikke publisert. Tider og bilder justeres med dere.</p>
+  <header><div class="row"><a class="logo" href="#top">Clou</a><a class="btn light" href="tel:+4722209360">Bestill time</a></div></header>
+  <section class="hero" id="top">
+    <img src="hero.jpg" alt="Salongen på Tullinløkka"/>
+    <div class="shade"></div>
+    <div class="copy">
+      <p class="kicker">Tullinløkka · Kristian Augusts gate 15D</p>
+      <h1>Clou</h1>
+      <p>Frisørsalong med sjæl og god musikk. Ring for time — ikke på mail.</p>
+      <p style="margin-top:20px"><a class="btn light" href="tel:+4722209360">22 20 93 60</a></p>
+    </div>
+  </section>
+  <section class="wrap">
+    <div>
+      <p class="kicker">Salongen</p>
+      <h2>På Tullinløkka</h2>
+      <p class="muted">Flyttet fra Youngstorget i 2023. Gunn, Lene, Maren, Karianne, Vilma og Julie. Clou AS.</p>
+    </div>
+    <img class="side" src="klipp.jpg" alt=""/>
+  </section>
+  <section class="band">
+    <div class="wrap">
+      <div>
+        <p class="kicker">Åpningstider</p>
+        <h2>Når vi er her</h2>
+        <p class="muted">Fra salongens egen info. Dere retter.</p>
+        <div class="hours">
+          <div><span>Mandag–onsdag</span><span class="muted">10–18</span></div>
+          <div><span>Torsdag</span><span class="muted">10–19</span></div>
+          <div><span>Fredag</span><span class="muted">10–18</span></div>
+        </div>
+      </div>
+      <div>
+        <p class="kicker">Adresse</p>
+        <h2>Finn oss</h2>
+        <p>Kristian Augusts gate 15D<br/>0164 Oslo</p>
+        <p class="muted">Org.nr 996 402 010</p>
+        <p><a href="https://maps.google.com/?q=Kristian+Augusts+gate+15D,+0164+Oslo">Åpne i Kart</a></p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <p style="font-family:Fraunces,Georgia,serif;font-size:22px;margin:0">Clou</p>
+    <p class="muted">Utkast. Bildene er stemning. 8 990 kr å gjøre siden ekte, 249 kr/mnd drift. Si nei, så stopper det.</p>
+  </footer>
+</body>
+</html>

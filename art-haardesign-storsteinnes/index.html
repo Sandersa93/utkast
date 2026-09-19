@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="nb">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Art Hårdesign — Storsteinnes</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet"/>
+  <style>
+    :root { --bg:#f1ebe3; --fg:#1c1612; --muted:#6a5e54; --surface:#faf7f2; --line:#d8cfc3; --ink:#3a2a22; --inkfg:#faf7f2; }
+    * { box-sizing:border-box; } body { margin:0; background:var(--bg); color:var(--fg); font-family:Outfit,system-ui,sans-serif; }
+    h1,h2 { font-family:Fraunces,Georgia,serif; font-weight:500; }
+    .bar { background:var(--ink); color:var(--inkfg); text-align:center; font-size:12px; padding:8px 16px; }
+    header { position:sticky; top:0; background:rgba(241,235,227,.92); backdrop-filter:blur(10px); border-bottom:1px solid var(--line); }
+    .row { max-width:1040px; margin:0 auto; padding:12px 16px; display:flex; justify-content:space-between; align-items:center; }
+    .logo { font-family:Fraunces,Georgia,serif; font-size:20px; color:var(--fg); text-decoration:none; }
+    .btn { display:inline-flex; align-items:center; min-height:44px; padding:0 18px; border-radius:999px; text-decoration:none; font-size:14px; font-weight:500; }
+    .dark { background:var(--ink); color:var(--inkfg); } .light { background:var(--surface); color:var(--fg); }
+    .hero { position:relative; } .hero img { width:100%; height:70vh; min-height:360px; object-fit:cover; display:block; }
+    .shade { position:absolute; inset:0; background:linear-gradient(to top, rgba(28,22,18,.78), transparent); }
+    .copy { position:absolute; left:0; right:0; bottom:0; max-width:1040px; margin:0 auto; padding:80px 16px 36px; color:var(--inkfg); }
+    .kicker { font-size:11px; letter-spacing:.16em; text-transform:uppercase; opacity:.8; }
+    h1 { font-size:clamp(36px,6vw,56px); margin:8px 0 12px; line-height:1.02; }
+    .wrap { max-width:1040px; margin:0 auto; padding:56px 16px; display:grid; gap:40px; }
+    @media(min-width:700px){ .wrap { grid-template-columns:1fr 1fr; } }
+    .band { background:var(--surface); border-top:1px solid var(--line); }
+    .hours div { display:flex; justify-content:space-between; padding:12px 0; border-bottom:1px solid var(--line); font-size:14px; }
+    footer { padding:40px 16px; border-top:1px solid var(--line); }
+    .muted { color:var(--muted); }
+    img.side { width:100%; height:280px; object-fit:cover; border-radius:18px; }
+  </style>
+</head>
+<body>
+  <p class="bar">Utkast til Art Hårdesign — ikke publisert. Tider og bilder justeres med dere.</p>
+  <header><div class="row"><a class="logo" href="#top">Art Hårdesign</a><a class="btn dark" href="tel:+4777720249">Bestill time</a></div></header>
+  <section class="hero" id="top">
+    <img src="hero.jpg" alt="Salongen på Storsteinnes"/>
+    <div class="shade"></div>
+    <div class="copy">
+      <p class="kicker">Storsteinnes · Balstun 4</p>
+      <h1>Art Hårdesign</h1>
+      <p>Frisørsalong i Balsfjord. Klipp og farge. Ring og få time.</p>
+      <p style="margin-top:20px"><a class="btn light" href="tel:+4777720249">77 72 02 49</a></p>
+    </div>
+  </section>
+  <section class="wrap">
+    <div>
+      <p class="kicker">Salongen</p>
+      <h2>På Balstun i Storsteinnes</h2>
+      <p class="muted">Fem i salongen. Lisa Kongsli Toftaker. Ikke en kjede — Art Hårdesign AS.</p>
+    </div>
+    <img class="side" src="stasjon.jpg" alt=""/>
+  </section>
+  <section class="band">
+    <div class="wrap">
+      <div>
+        <p class="kicker">Åpningstider</p>
+        <h2>Når vi er her</h2>
+        <p class="muted">Dere retter dette.</p>
+        <div class="hours">
+          <div><span>Mandag–fredag</span><span class="muted">09–16</span></div>
+          <div><span>Lørdag–søndag</span><span class="muted">Etter avtale</span></div>
+        </div>
+      </div>
+      <div>
+        <p class="kicker">Adresse</p>
+        <h2>Finn oss</h2>
+        <p>Balstun 4<br/>9050 Storsteinnes</p>
+        <p class="muted">Org.nr 996 360 318</p>
+        <p><a href="https://maps.google.com/?q=Balstun+4,+9050+Storsteinnes">Åpne i Kart</a></p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <p style="font-family:Fraunces,Georgia,serif;font-size:22px;margin:0">Art Hårdesign</p>
+    <p class="muted">Utkast. Bildene er stemning. 8 990 kr å gjøre siden ekte, 249 kr/mnd drift. Si nei, så stopper det.</p>
+  </footer>
+</body>
+</html>
