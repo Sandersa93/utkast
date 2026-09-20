@@ -2,42 +2,10 @@
 <html lang="nb"><head>
 <meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Ovnskroken — murer Ørje</title>
+<link rel="stylesheet" href="/utkast/craft.css"/>
 <style>
 @import url("https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap");
-:root { --bg:#141210; --fg:#f2ebe2; --muted:#9a8e82; --line:#343028; --accent:#c4a06a; --ink:#16120c; }
-* { box-sizing:border-box; }
-html { -webkit-font-smoothing:antialiased; }
-body { margin:0; background:var(--bg); color:var(--fg); font-family:"Schibsted Grotesk",ui-sans-serif,system-ui,sans-serif; font-size:17px; line-height:1.6; }
-h1,h2,h3 { font-family:inherit; font-weight:600; letter-spacing:-0.015em; line-height:1.18; overflow:visible; padding-block:0.08em; text-wrap:balance; }
-p { margin:0 0 1em; max-width:38rem; }
-.bar { background:transparent; color:var(--muted); text-align:center; font-size:12px; font-weight:500; padding:10px 16px; border-bottom:1px solid var(--line); }
-header { position:sticky; top:0; z-index:5; display:flex; justify-content:space-between; align-items:center; gap:16px; padding:14px 24px; background:color-mix(in srgb, var(--bg) 80%, transparent); backdrop-filter:blur(16px); border-bottom:1px solid var(--line); }
-.logo { font-weight:600; color:var(--fg); text-decoration:none; font-size:16px; }
-.btn { display:inline-flex; min-height:44px; align-items:center; padding:0 18px; border-radius:4px; background:var(--accent); color:var(--ink); text-decoration:none; font-weight:600; font-size:14px; }
-.hero { position:relative; min-height:min(86vh,760px); display:flex; align-items:flex-end; }
-.hero img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
-.hero .veil { position:absolute; inset:0; background:linear-gradient(to top, var(--bg) 8%, color-mix(in srgb, var(--bg) 70%, transparent) 42%, transparent 72%); }
-.hero .inner { position:relative; padding:48px 24px 56px; max-width:1080px; width:100%; margin:0 auto; }
-.kicker { font-size:12px; letter-spacing:0.12em; text-transform:uppercase; color:var(--accent); font-weight:600; margin:0 0 14px; }
-h1 { font-size:clamp(36px,5.6vw,64px); margin:0 0 18px; max-width:14ch; }
-.lede { font-size:1.05rem; color:var(--muted); max-width:32rem; }
-.phone { font-size:clamp(22px,3vw,32px); font-weight:600; margin:28px 0 0; letter-spacing:-0.02em; }
-.phone a { color:var(--fg); text-decoration:none; border-bottom:2px solid var(--accent); padding-bottom:2px; }
-.wrap { max-width:1080px; margin:0 auto; padding:72px 24px; }
-.split { display:grid; gap:48px; }
-@media(min-width:840px){
-  .split { grid-template-columns:1.15fr 0.85fr; align-items:start; }
-  .jobs { grid-template-columns:1fr 1fr 1fr; }
-}
-.jobs { display:grid; gap:16px; margin-top:32px; }
-.job { background:color-mix(in srgb, var(--fg) 4%, transparent); border:1px solid var(--line); border-radius:8px; padding:22px 22px 20px; }
-.job h2 { font-size:1.15rem; margin:0 0 8px; padding-block:0; }
-.muted { color:var(--muted); }
-.meta { font-size:15px; }
-.meta div { display:flex; justify-content:space-between; gap:16px; padding:14px 0; border-bottom:1px solid var(--line); }
-.meta div:first-child { border-top:1px solid var(--line); }
-footer { padding:40px 24px 56px; border-top:1px solid var(--line); color:var(--muted); font-size:14px; }
-a { color:inherit; }
+:root { --bg:#141210; --fg:#f0ece6; --muted:#9a9086; --line:#343028; --accent:#c4a070; --ink:#16120c; }
 </style>
 </head><body>
 <p class="bar">Utkast. Tekst og bilder justeres med dere. Ingenting er lagt ut i deres navn.</p>
@@ -46,21 +14,21 @@ a { color:inherit; }
   <a class="btn" href="tel:+4763855166">63 85 51 66</a>
 </header>
 <section class="hero" id="top">
-  <img src="hero-v2.jpg" alt=""/>
+  <img src="hero.jpg" alt=""/>
   <div class="veil"></div>
   <div class="inner">
     <p class="kicker">Bergerkroken 40 · Ørje</p>
     <h1>Ovnskroken</h1>
-    <p class="lede">Peis og mur på Ørje. Trond Sigvart Berger, 63 85 51 66.</p>
+    <p class="lede">Mur og ovn på Ørje. Trond Sigvart Berger, 63 85 51 66.</p>
     <p class="phone"><a href="tel:+4763855166">63 85 51 66</a></p>
   </div>
 </section>
 <section class="wrap">
   <p class="kicker">Oppdrag</p>
-  <h2 style="font-size:clamp(26px,3.2vw,40px);margin:0 0 16px">Peis og mur på Ørje</h2>
-  <p>Ovnskroken tar peis, ovn og murerarbeid fra Ørje. Bergerkroken 40.</p>
+  <h2 style="font-size:clamp(26px,3.2vw,40px);margin:0 0 16px">Mur og ovn på Ørje</h2>
+  <p>Ovnskroken tar murerarbeid og ovn på Ørje. Bergerkroken 40.</p>
   <p>Ring 63 85 51 66.</p>
-  <div class="jobs"><div class="job"><h2>Vedovn</h2><p class="muted">Montering og pipe.</p></div><div class="job"><h2>Peis</h2><p class="muted">Ny og vedlikehold.</p></div><div class="job"><h2>Mur</h2><p class="muted">Innvendig, Ørje.</p></div></div>
+  <div class="jobs"><div class="job"><h2>Ovn</h2><p class="muted">Montering.</p></div><div class="job"><h2>Mur</h2><p class="muted">Peis og pipe.</p></div><div class="job"><h2>Ørje</h2><p class="muted">Bergerkroken 40.</p></div></div>
 </section>
 <section class="wrap split" style="padding-top:0">
   <div>
