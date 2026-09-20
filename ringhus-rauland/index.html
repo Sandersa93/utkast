@@ -1,66 +1,34 @@
 <!doctype html>
 <html lang="nb"><head>
 <meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Ringhus — murer Rauland</title>
+<title>Ringhus Skifer-mur og flis — murer Rauland</title>
+<link rel="stylesheet" href="/utkast/craft.css"/>
 <style>
 @import url("https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap");
-:root { --bg:#101214; --fg:#e8ece8; --muted:#8a928c; --line:#2c3430; --accent:#8fbfb0; --ink:#0c1412; }
-* { box-sizing:border-box; }
-html { -webkit-font-smoothing:antialiased; }
-body { margin:0; background:var(--bg); color:var(--fg); font-family:"Schibsted Grotesk",ui-sans-serif,system-ui,sans-serif; font-size:17px; line-height:1.6; }
-h1,h2,h3 { font-family:inherit; font-weight:600; letter-spacing:-0.015em; line-height:1.18; overflow:visible; padding-block:0.08em; text-wrap:balance; }
-p { margin:0 0 1em; max-width:38rem; }
-.bar { background:transparent; color:var(--muted); text-align:center; font-size:12px; font-weight:500; padding:10px 16px; border-bottom:1px solid var(--line); }
-header { position:sticky; top:0; z-index:5; display:flex; justify-content:space-between; align-items:center; gap:16px; padding:14px 24px; background:color-mix(in srgb, var(--bg) 80%, transparent); backdrop-filter:blur(16px); border-bottom:1px solid var(--line); }
-.logo { font-weight:600; color:var(--fg); text-decoration:none; font-size:16px; }
-.btn { display:inline-flex; min-height:44px; align-items:center; padding:0 18px; border-radius:4px; background:var(--accent); color:var(--ink); text-decoration:none; font-weight:600; font-size:14px; }
-.hero { position:relative; min-height:min(86vh,760px); display:flex; align-items:flex-end; }
-.hero img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
-.hero .veil { position:absolute; inset:0; background:linear-gradient(to top, var(--bg) 8%, color-mix(in srgb, var(--bg) 70%, transparent) 42%, transparent 72%); }
-.hero .inner { position:relative; padding:48px 24px 56px; max-width:1080px; width:100%; margin:0 auto; }
-.kicker { font-size:12px; letter-spacing:0.12em; text-transform:uppercase; color:var(--accent); font-weight:600; margin:0 0 14px; }
-h1 { font-size:clamp(36px,5.6vw,64px); margin:0 0 18px; max-width:14ch; }
-.lede { font-size:1.05rem; color:var(--muted); max-width:32rem; }
-.phone { font-size:clamp(22px,3vw,32px); font-weight:600; margin:28px 0 0; letter-spacing:-0.02em; }
-.phone a { color:var(--fg); text-decoration:none; border-bottom:2px solid var(--accent); padding-bottom:2px; }
-.wrap { max-width:1080px; margin:0 auto; padding:72px 24px; }
-.split { display:grid; gap:48px; }
-@media(min-width:840px){
-  .split { grid-template-columns:1.15fr 0.85fr; align-items:start; }
-  .jobs { grid-template-columns:1fr 1fr 1fr; }
-}
-.jobs { display:grid; gap:16px; margin-top:32px; }
-.job { background:color-mix(in srgb, var(--fg) 4%, transparent); border:1px solid var(--line); border-radius:8px; padding:22px 22px 20px; }
-.job h2 { font-size:1.15rem; margin:0 0 8px; padding-block:0; }
-.muted { color:var(--muted); }
-.meta { font-size:15px; }
-.meta div { display:flex; justify-content:space-between; gap:16px; padding:14px 0; border-bottom:1px solid var(--line); }
-.meta div:first-child { border-top:1px solid var(--line); }
-footer { padding:40px 24px 56px; border-top:1px solid var(--line); color:var(--muted); font-size:14px; }
-a { color:inherit; }
+:root { --bg:#141210; --fg:#efe8e0; --muted:#9a8e82; --line:#322c26; --accent:#a89070; --ink:#16120c; }
 </style>
 </head><body>
 <p class="bar">Utkast. Tekst og bilder justeres med dere. Ingenting er lagt ut i deres navn.</p>
 <header>
-  <a class="logo" href="#top">Ringhus</a>
+  <a class="logo" href="#top">Ringhus Skifer-mur og flis</a>
   <a class="btn" href="tel:+4741514255">415 14 255</a>
 </header>
 <section class="hero" id="top">
-  <img src="hero-v2.jpg" alt=""/>
+  <img src="hero.jpg" alt=""/>
   <div class="veil"></div>
   <div class="inner">
     <p class="kicker">Totakvegen 1737 · Rauland</p>
-    <h1>Ringhus skifer, mur og flis</h1>
+    <h1>Ringhus</h1>
     <p class="lede">Skifer, mur og flis på Rauland. Aslak Ringhus, 415 14 255.</p>
     <p class="phone"><a href="tel:+4741514255">415 14 255</a></p>
   </div>
 </section>
 <section class="wrap">
   <p class="kicker">Oppdrag</p>
-  <h2 style="font-size:clamp(26px,3.2vw,40px);margin:0 0 16px">Skifer på Rauland</h2>
-  <p>Ringhus Skifer-Mur og Flis tar skifer, mur og flis fra Rauland. Totakvegen 1737.</p>
+  <h2 style="font-size:clamp(26px,3.2vw,40px);margin:0 0 16px">Skifer og mur på Rauland</h2>
+  <p>Ringhus Skifer-mur og flis tar skifer, mur og flis på Rauland. Totakvegen 1737.</p>
   <p>Ring 415 14 255.</p>
-  <div class="jobs"><div class="job"><h2>Skifer</h2><p class="muted">Tak og vegg, norsk skifer.</p></div><div class="job"><h2>Flis</h2><p class="muted">Bad, gulv og våtrom.</p></div><div class="job"><h2>Mur</h2><p class="muted">Tegl, puss og stein.</p></div></div>
+  <div class="jobs"><div class="job"><h2>Skifer</h2><p class="muted">Mur og vegg.</p></div><div class="job"><h2>Flis</h2><p class="muted">Bad og gulv.</p></div><div class="job"><h2>Rauland</h2><p class="muted">Totakvegen 1737.</p></div></div>
 </section>
 <section class="wrap split" style="padding-top:0">
   <div>
@@ -77,7 +45,7 @@ a { color:inherit; }
   </div>
 </section>
 <footer>
-  <p style="color:var(--fg);font-size:20px;margin:0 0 8px">Ringhus</p>
+  <p style="color:var(--fg);font-size:20px;margin:0 0 8px">Ringhus Skifer-mur og flis</p>
   Utkast. Bildene er stemning, ikke fra bedriften. Fastpris 8 990 kr, 249 kr/mnd for drift.
 </footer>
 </body></html>
